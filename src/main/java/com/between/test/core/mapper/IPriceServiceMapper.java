@@ -9,7 +9,7 @@ import org.mapstruct.ReportingPolicy;
  * @author : J. Andres Boyaca (janbs)
  * @since : 15/05/21
  **/
-@Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface IPriceServiceMapper extends IMapperGeneric<Price, PriceDTO> {
 
 }
